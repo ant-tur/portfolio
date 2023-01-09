@@ -15,3 +15,10 @@ function closeMenu(elem) {
 
 closeMenu(closeElem);
 closeMenu(overlay);
+
+const percents = document.querySelectorAll('.skills__percent-number'),
+	lines = document.querySelectorAll('.skills__percent-orange');
+
+percents.forEach( (item, i) => {
+	lines[i].style.width = item.innerHTML;
+});
