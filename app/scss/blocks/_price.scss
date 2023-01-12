@@ -17,12 +17,13 @@
 	&__item {
 		display: grid;
 		position: relative;
-		// width: 366px;
-		// height: 44px;
 		padding-left: 25px;
-		grid-template: 21px 18px / 190px 60px;
-		justify-content: space-between;
-		align-content: space-between;
+		// мой первый вариант
+		// grid-template: 21px 18px / 190px 60px;
+		// justify-content: space-between;
+		// align-content: space-between;
+		row-gap: 5px;
+		grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
 
 		&:before {
 			content: '';
@@ -34,9 +35,6 @@
 			border-radius: 100%;
 		}
 
-		&:last-child {
-			grid-template: 21px 18px / 190px 120px;
-		}
 	}
 
 	&__name,
@@ -44,6 +42,10 @@
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 21px;
+	}
+
+	&__cost {
+		justify-self: end;
 	}
 
 	&__descr {

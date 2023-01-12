@@ -1,11 +1,12 @@
 .btn {
 	height: 45px;
 	background: $main-color;
-	box-shadow: 4px 4px 4px rgba(255, 165, 1, 0.55);
-	;
+	box-shadow: 2px 2px 4px rgba(255, 165, 1, 0.55);
+	border: none;
 	padding: 12px 25px;
+	cursor: pointer;
 
 	&:hover {
-		box-shadow: 4px 0px 10px 2px $help-color, 0px -4px 10px 2px $help-color, -4px 0px 10px 2px $help-color, 0px 4px 10px 2px $help-color;
+		background-color: $help-color;
 	}
 }
