@@ -160,7 +160,20 @@
     <div class="container">
       <div class="about-me__grid">
         <div class="about-me__photo">
-          <img src="images/photo/my_photo.jpg" alt="my_photo">
+          <!-- <img srcset='images/photo/my-photo-min.jpg 300w,
+          images/photo/my-photo.jpg 400w' sizes='(max-width: 576px) 280px,
+          (min-width: 577px) 400px' src="images/photo/my-photo.jpg" alt="my-photo"> -->
+
+          <!-- <picture>
+            <source media='(max-width: 576px)' srcset='images/photo/my-photo-min.jpg'>
+            <source media='(min-width: 577px)' srcset='images/photo/my-photo.jpg'>
+            <img src="imeges/photo/my-photo.jpg" alt="photo">
+          </picture> -->
+
+          <picture>
+            <source type='image/webp' srcset='images/photo/my-photo.webp'>
+            <img src="images/photo/my-photo.jpg" alt="photo">
+          </picture>
         </div>
         <div class="about-me__info">
           <h2 class="title title_fz16 about-me__subtitle">Про меня</h2>
@@ -370,7 +383,7 @@
   <section class="skills">
     <div class="container">
       <h2 class="title title_fz16 title__section-title">Навыки</h2>
-      <div class="title title__section-subtitle">Что я использую в работе</div>
+      <div class="title title__section-subtitle skills__subtitle">Что я использую в работе</div>
       <div class="divider"></div>
 
       <div class="skills__items">
@@ -606,11 +619,11 @@
     <div class="container">
       <div class="contact__wrapper">
         <div class="contact__photo">
-          <img src="images/photo/my_photo.jpg" alt="my_photo">
+          <img src="images/photo/my-photo.jpg" alt="my_photo">
         </div>
         <div class="contact__descr">
           <h2 class="title title_fz16 contact__subtitle">Контакты</h2>
-          <div class="title">Свяжитесь со мной</div>
+          <div class="title contact__title">Свяжитесь со мной</div>
           <div class="divider"></div>
           <div class="title title_fz14 contact__text">Любым удобным для вас способом:</div>
           <div class="contact__social">
